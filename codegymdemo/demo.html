@@ -1,0 +1,51 @@
+<form action="demo">
+    <table width=400px; heigh=300px; border="3">
+        <tr>
+            <th colspan="3">may tinh cong tru</th>
+        </tr><br>
+       <tr>
+           <td>nhap so thu nhat</td>
+           <td><input type="text" placeholder="nhap so thu nhat" side="40" name="" id="so 1"></td>
+
+       </tr>
+       <tr>
+           <td>nhap so thu hai</td>
+           <td><input type="text" placeholder="nhap so thu hai" side="40" name="" id="so 2"></td>
+       </tr>
+       <tr>
+           <th colspan="3">
+           <button type="button" onclick="sum()">tinh cong</button>
+           <button type="button" onclick="Subtration()">tinh tru</button>
+           <button type="button" onclick="multiply()">tinh nhan</button>
+           <button type="button" onclick="sum()">tinh chia</button>
+        </th>
+        <tr >
+                <td id=show><input type="text" placeholder="dap an la" side="40" name="0"></td>  
+        </tr>
+       </tr>
+
+    </table>
+    
+</form>
+<script>
+function sum(){
+    let a = parseInt(document.getElementById('so 1').value);
+    let b = parseInt(document.getElementById('so 2').value);
+    let result = a + b;
+    document.getElementById('show').innerHTML = result;
+}
+function Subtration(){
+    let a = parseInt(document.getElementById('so 1').value);
+    let b = parseInt(document.getElementById('so 2').value);
+    let result = a - b;
+    document.getElementById('show').innerHTML = result;
+}
+
+function multiply(){
+    let a = parseInt(document.getElementById('so 1').value);
+    let b = parseInt(document.getElementById('so 2').value);
+    let result = a * b;
+    document.getElementById('show').innerHTML = result;
+}
+
+</script>
