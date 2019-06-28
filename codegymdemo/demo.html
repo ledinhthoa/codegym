@@ -17,7 +17,7 @@
            <button type="button" onclick="sum()">tinh cong</button>
            <button type="button" onclick="Subtration()">tinh tru</button>
            <button type="button" onclick="multiply()">tinh nhan</button>
-           <button type="button" onclick="sum()">tinh chia</button>
+           <button type="button" onclick="chia()">tinh chia</button>
         </th>
         <tr >
                 <td id=show><input type="text" placeholder="dap an la" side="40" name="0"></td>  
@@ -29,10 +29,18 @@
 </form>
 <script>
 function sum(){
-    let a = parseInt(document.getElementById('so 1').value);
-    let b = parseInt(document.getElementById('so 2').value);
+    let a = parseFloat(document.getElementById('so 1').value);
+    let b = parseFloat(document.getElementById('so 2').value);
     let result = a + b;
-    document.getElementById('show').innerHTML = result;
+    let x;
+    if( confirm("ban co muon thuc hien phep toan ko")){
+        x="ok";
+        document.getElementById('show').innerHTML = result;
+    }else {
+        x="thoat";
+    
+    }
+   
 }
 function Subtration(){
     let a = parseInt(document.getElementById('so 1').value);
@@ -45,6 +53,12 @@ function multiply(){
     let a = parseInt(document.getElementById('so 1').value);
     let b = parseInt(document.getElementById('so 2').value);
     let result = a * b;
+    document.getElementById('show').innerHTML = result;
+}
+function chia(){
+    let a = parseInt(document.getElementById('so 1').value);
+    let b = parseInt(document.getElementById('so 2').value);
+    let result = a /b;
     document.getElementById('show').innerHTML = result;
 }
 

@@ -1,0 +1,13 @@
+<html>
+    <input type="text" id="demo" placeholder="nhap chuyen do">
+    <input type="submit" onclick="nhietdo()" value="doi nhiet do">
+    <div id="resut"></div>
+    <script>
+        function nhietdo() {
+            let celcius = document.getElementById("demo").value;
+            let fahrenheit = ((celcius+32)*9)/5;
+            document.getElementById("resut").innerHTML = fahrenheit;
+        }
+    </script>
+
+</html>
