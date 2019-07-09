@@ -6,10 +6,10 @@
          function bangcuuchuong()
                        {
                        document.write("<table border=1 width=100%>")
-                           for(let i=1;i<=9;i++)   
+                           for(let i=1;i<=10;i++)   
                            {
                            document.write("<tr>")
-                           for(let n=2;n<=9;n++)   
+                           for(let n=2;n<=10;n++)   
                            document.write("<td>" +n + "x" + i +"="+ (n*i));
                            document.write("</td>");
                            
@@ -18,6 +18,32 @@
                        }
 
         bangcuuchuong();
+        //gjai p huong trinh bat hai
+
+                           let a = window.prompt("Nhập a: ");
+                           let b = window.prompt("Nhập b: ");
+                           let c = window.prompt("Nhập c: ");
+
+                 let delta = b*b - 4*a*c;
+                  if(delta < 0) {
+                     document.write("Phương trình vô nghiệm");
+                  } else if (delta === 0) {
+                    let KetQua = -b/(2*a);
+                     document.write("x1 = x2 = " + KetQua);
+                  } else {
+                      let x1 = -b + Math.sqrt(delta)/2*a;
+                     let  x2 = -b - Math.sqrt(delta)/2*a;
+                     // Math.sqrt(value) trả về căn bậc hai của value
+                     document.write("x1 = " + x1);
+                     document.write(" x2 = " + x2);
+                  }
+         //Sử dụng vòng lặp để đếm từ 1 đến 100
+      
+      for (let i = 0; i < 10; i++) {
+       
+        document.write(i);
+      }
+                  
        </script>
    </body>
 </html>

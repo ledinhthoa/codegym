@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+          
+        <script>
+
+           let a =prompt("nhap vao so a")
+            let b =prompt("nhap vao so b")
+          
+           if (a%b==0) {
+                alert("a la so chia het cho b")
+                
+            } else {
+                alert("a ko chia het chob")
+            }
+            //tinh tuoi
+            let tuoi=prompt("nhap vao so tuoi hoc sinh")
+            if (tuoi > 15) {
+                alert("hoc sinh du tuoi vao lop 10")
+            } else {
+                alert("hoc sinh chua du tuoi vao lop 10")
+            }
+
+//tinh nam tuoi
+let D = new Date();
+        let NamSinh, NamHienTai;
+        NamHienTai = D.getFullYear(); // Lưu năm hiện tại vào biến
+        NamSinh = prompt("Bạn sinh năm bao nhiêu ? : ","");
+        if (NamSinh<NamHienTai) {
+            alert("Tuổi của bạn bây giờ là : " + (NamHienTai-NamSinh));
+        
+        } else {
+            
+            alert('ban phai nhap lai nam sinh');
+        }
+        
+        </script>
+    </body>
+</html>

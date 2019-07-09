@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+        
+    <script>
+   /* var a =[[1,2,2,5],[2,5,8],[5,9,1],[6,8,12]];
+    for(var i in a)
+    {
+        document.write("</br>")
+        for(var j in a[i]){
+            document.write(a[i][j]);
+            
+        }
+    }
+        
+   */
+ /*  var a =["thia","demo",4,6,9];
+   document.write(a.sort());
+   let x=a.length;
+   alert(x);
+*/
+
+
+
+function main(){
+    let dem1 = [1,8,5];
+    let dem2 = [1,3,5];
+    console.log(checkEqual(dem1, dem2));
+   
+}
+
+function checkEqual(arr1, arr2){
+    if(arr1.length != arr2.length){
+        alert('mng khac nhau')
+        return false;
+    }
+    for(let i = 0; i < arr1.length; i++){
+            if(arr1[i] != arr2[i]){
+                alert('mang khac nhau')
+                return false;
+                
+            }
+        }
+        alert('mang gjong nhau')
+    return true;
+}
+
+main();
+
+// for (let i = 0;i<dem1.length; i++) {
+//     document.write(dem1);
+// }
+// document.write("</br>")
+// for (let j= 0; j< dem2.length; j++) {
+//     document.write(dem2);
+    
+// }
+
+// let dem1=[1,2,3,4];
+// let dem2=[3,4,5,6];
+// function (params) {
+    
+
+    </script>
+</body>
+</html>

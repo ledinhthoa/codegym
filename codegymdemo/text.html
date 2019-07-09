@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+        let number1 = 0;
+        let number2 = 1;
+        let tong=0;
+       //document.write(number1 + "</br>");
+       // document.write(number2 + "</br>");
+
+      // let num = parseInt(prompt());
+
+        for(let i = 3; i <= 30; i++){
+           
+            let number3 = number1 + number2;
+            number1 = number2;
+            number2 = number3;
+           
+            
+        if (number3%7==0) {
+            document.write(number3+"</br>");
+            tong += number3;
+        }
+        
+            }
+            
+    document.write("asdas" + tong);
+      
+    
+*/
+function fibonacci() {
+var f0=prompt("nhap so fo=")
+var f1=prompt("nhap so f1=");
+var so=new Array;
+var fibo="";
+for (let i = 2; i <20;i++) {
+    so[0]=Number(f0)
+    so[1]=Number(f1);
+    so[i]=so[i-1]+so[i-2];
+    fibo= fibo.concat(so[i]+",");
+    
+}
+alert("day so fibonacci"+fibo);
+}
+fibonacci();
+</script>
+       
+</body>
+</html>
