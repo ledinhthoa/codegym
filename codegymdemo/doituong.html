@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lap trinh huong doi tuong</title>
+<style>
+</style>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+        Trình duyệt của bạn không hỗ trợ thẻ canvas trong HTML5.
+        </canvas>
+        <p id='getPerimeter'></p>
+        <p id='Area'></p>
+        
+<script>
+ /*var canvas=document.getElementById('game');
+ var context = canvas.getContext("2d");
+
+ var x=20,y=20;
+ function drappBall(){
+ context.beginPath();
+ context.arc(x,y,40,0,2*Math.PI);
+ context.fillStyle='red'
+ context.fill();
+ 
+
+ }
+ setInterval( function () {
+     context.clearRect(0,0,canvas.width,canvas.height);
+     drappBall();
+     x+=2;
+     y+=2;
+     
+ },200);
+ drappBall();*/
+ 
+ /*let MyDate = function(day, month, year) {
+
+                this.day = day;
+
+                this.month = month;
+
+                this.year = year;
+
+
+                this.getDay = function() {
+                    return this.day;
+                }
+                this.getMonth = function() {
+                    return this.month;
+                }
+                this.getYear = function() {
+                    return this.year;
+                }
+this.setDay = function(day) {
+    this.day  = day;
+}
+this.setMonth = function(month) {
+    this.month  = month;
+}
+this.setYear = function(year) {
+    this.year  = year;
+}
+};
+let date = new MyDate(5, 2, 2007);
+
+let day = date.getDay(); // 2
+
+let month = date.getMonth(); // 2
+
+let year = date.getYear(); // 2007
+
+
+alert(day + "/" + month + "/" + year);
+
+*/
+
+let Rectangle = function(chieudai,chieurong)
+{
+ 
+    this.chieudai=chieudai;
+    this.chieurong=chieurong;
+            this.getPerimeter = function()
+             {
+                return (this.chieudai + this.chieurong)*2;
+            }
+            this.getArea = function()
+            {
+                return this.chieudai * this.chieurong;
+            }
+            this.draw = function(){
+                var canvas = document.getElementById("myCanvas");
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = 'blue';
+                ctx.fillRect(0,0,this.chieudai, this.chieurong);
+            }
+            this.setchieudai=function(chieudai){
+                this.chieudai=chieudai;
+            }
+            this.setchieurong=function(chieurong){
+                this.chieurong=chieurong;
+            }
+ }
+   let a =new Rectangle(150,40); 
+   a.draw();
+   a.setchieudai(200);
+   a.setchieurong(100);
+   document.getElementById('getPerimeter').innerHTML = 'Chu vi hình chữ nhật: ' + a.getPerimeter();
+        document.getElementById('Area').innerHTML = 'Diện tích hình chữ nhật: ' + a.getArea();
+
+
+    
+
+</script>
+</body>
+</html>
