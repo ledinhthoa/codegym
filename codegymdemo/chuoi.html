@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chuoi</title>
+</head>
+<body>
+        <form name="form1" id="form1" method="post"> 
+                <input type="text" name="email" id="email" size="40"> 
+                <input type="button" name="check" value="Check" onclick="checkEmail();"> 
+                </form>
+    <script>
+                
+               
+      /*        function isFirstLetterUpperCase(str){
+                    regexp = /^[A-Z]/;
+                    if (regexp.test(str)) {
+                        alert(str)
+                        console.log("String's first character is uppercase");
+                    } else {
+                        console.log("String's first character is not uppercase");
+                    }
+                }
+                isFirstLetterUpperCase('Abcd')*?
+               function checkEmail() { 
+                            var email = document.getElementById('email'); 
+                            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+                            if (!filter.test(email.value)) { 
+                                    alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+                                   
+                                    return false; 
+                            }
+                            else{ 
+                                    alert('OK roi day, Email nay hop le.'); 
+                            } 
+} 
+                    
+                     /*   function checkEmail() {
+                            var email = document.getElementById('email');
+                            var filter=/ ^[_a-z0-9]{6,}$/
+                            if(!filter.test(email.value)){
+                                alert('nhap lai dia chi')
+                            }else{
+                                alert('ok')
+                            }
+                            
+                        }*/
+    </script>
+</body>
+</html>

@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>crud javascrip</title>
    
 </head>
 <body>
-   <script>
-       let x=[1,24,3,'kitu',5,6,7,8,9,0];
-       let max = x[0];
-    
-    for (let i = 0; i < x.length; i++) {
-        if(x[i] > max){
-            max = x[i];
-        } 
-    }
+      <h2>danh sach sinh vien</h2>
+        <fieldset>
+            <legend style="width: 80px;"  >thong tin sinh vien</legend>
+            ho ten: <input type="text" id='hoten'></br>
+            <button onclick="them">them</button>
+            <button onclick="sua">sua</button>
+            <button onclick="xoa">xoa</button>
+        </fieldset>
+        <div id="danh sach" style="border: red;height: 60px;"></div>
+ 
 
-    document.write(max);
+
+
+   <script>
+       var i=1;
+   function them() {
+       let hoten=document.getElementById('hoten').value;
+       let theDiv=document.getElementById("danh sach").value;
+       let theP= document.createElement('p');
+       theDiv.appendChild(theP)
+       var textnode=document.createTextNode(i+'. '+hoten);
+       theP.appendChild(textnode);
+        i++;
+
+       
+   }
+ them();
    </script>
    
    
